@@ -1,0 +1,22 @@
+{
+  "name": "84tigers",
+  "version": "1.0.0",
+  "description": "\"biz card app\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/84tigers/portfolio.git"
+  },
+  "author": "\"Andrew Hyska\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/84tigers/portfolio/issues"
+  },
+  "homepage": "https://github.com/84tigers/portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
