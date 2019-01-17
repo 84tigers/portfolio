@@ -4,7 +4,7 @@
 angular.module("App", ["ngRoute"])
     .config(["$routeProvider", ($routeProvider) => {
         $routeProvider
-        .when("/home", {
+        .when("/", {
             template: "<home></home>"
         })
         // .when("/contact", {

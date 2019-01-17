@@ -1,3 +1,34 @@
+/* font-family: 'Coiny', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Fascinate', cursive;
+font-family: 'Modak', cursive; */
+
+
 body {
     background-color: black;
+}
+
+background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#border-right {
+    transform: scale(-1,1);
+}
+
+.curve-txt {
+    font-family: 'Modak', cursive;
+    fill: #2E2E2E;
+    font-size: 6.4em;
+    font-family: 'Modak', cursive;
+    letter-spacing: -0.15em;
+    text-shadow: 0em 1.1em 0.5em rgba(0, 0, 0, 0.75);
+}
+
+#curve-viewbox {
+    overflow: visible;
 }
