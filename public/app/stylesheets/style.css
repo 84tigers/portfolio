@@ -8,6 +8,11 @@ body {
     background-color: black;
 }
 
+#path1 {
+    /* 580-600, 480-500, 250-260, 340-350, 35-40 */
+    stroke-dasharray: 10;
+}
+
 background {
     width: 100%;
     position: absolute;
@@ -20,7 +25,7 @@ background {
     transform: scale(-1,1);
 }
 
-.curve-txt {
+.curve__path--txt {
     font-family: 'Modak', cursive;
     fill: #2E2E2E;
     font-size: 6.4em;
@@ -29,6 +34,97 @@ background {
     text-shadow: 0em 1.1em 0.5em rgba(0, 0, 0, 0.75);
 }
 
-#curve-viewbox {
+.curve__line--txt {
+    font-family: 'Fascinate', cursive;
+    fill: #171717;
+    font-size: 4.6em;
+    letter-spacing: 0.42em;
+}
+
+#curve--viewbox {
     overflow: visible;
+    /* border-top: 2px dotted #FF6F61; */
+
+}
+
+/* CONTENT AREA */
+
+.about {
+    height: 34vh;
+    /* border: 1px dotted red; */
+    /* margin-top: 10%; */
+    padding: 3% 12% 0% 12%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.about__title {
+    font-family: 'Coiny', cursive;
+    font-size: 3.25em;
+    /* color: rgb(255,111,97); */
+    /* color: #FF00FF; */
+    color: #464646;
+
+    line-height: 0.55em;
+    letter-spacing: -0.13em;
+    padding-bottom: 5%;
+}
+
+section {
+    /* border-bottom: 2px solid magenta; */
+    color: red;
+}
+
+/* LOGO | bottom to top */
+
+.logo * {
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    /* top: 0; */
+    /* background: url("/public/app/images/acid__clean--tiger-background-circ.png") center contain no-repeat; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: grayscale(100%);
+
+}
+
+.logo__layer--01 {
+    background-image: url("/public/app/images/acid__clean--tiger-background-circ.png");
+}
+
+.logo__layer--02 {
+    background-image: url("/public/app/images/acid__clean--tiger-outer-circ.png");
+}
+
+.logo__layer--03 {
+    background-image: url("/public/app/images/acid__clean--tiger-stamp.png");   
+}
+
+.logo__layer--04 {
+    background-image: url("/public/app/images/acid__clean--detroit-txt.png"); 
+    background-size: 97%;
+}
+
+.logo__layer--05 {
+    background-image: url("/public/app/images/acid__clean--exlclaim.png");   
+}
+
+.logo__layer--06 {
+    background-image: url("/public/app/images/acid__clean--84-txt.png");   
+}
+
+.logo__layer--07 {
+    background-image: url("/public/app/images/acid__clean--cut-dashed-circ.png");   
+}
+
+.logo__layer--08 {
+    background-image: url("/public/app/images/acid__clean--in-solid-circ.png");   
+}
+
+.logo__layer--09 {
+    background-image: url("/public/app/images/acid__clean--out-dashed-circ.png");   
 }
