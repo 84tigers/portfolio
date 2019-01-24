@@ -31,7 +31,8 @@ background {
     font-size: 6.4em;
     font-family: 'Modak', cursive;
     letter-spacing: -0.15em;
-    text-shadow: 0em 1.1em 0.5em rgba(0, 0, 0, 0.75);
+    text-shadow: 0em 1.1em 0.5em rgba(0, 0, 0, 0.75), 
+                 0em -0.2em 0.5em rgba(0, 0, 0, 0.75);
 }
 
 .curve__line--txt {
@@ -50,7 +51,7 @@ background {
 /* CONTENT AREA */
 
 .about {
-    height: 34vh;
+    height: 45vh;
     /* border: 1px dotted red; */
     /* margin-top: 10%; */
     padding: 3% 12% 0% 12%;
@@ -58,6 +59,17 @@ background {
     font-size: 1em;
     color: white;
     font-family: 'Comfortaa', cursive;
+    /* background-image: url("/public/app/images/boltz__01.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#boltz {
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 
 .about__title {
@@ -66,15 +78,77 @@ background {
     /* color: rgb(255,111,97); */
     /* color: #FF00FF; */
     color: #464646;
+    /* text-shadow: 0px 4px 1px rgb(255, 111, 97); */
+    text-shadow: 0px 4px 1px #FF00FF;
+    /* -webkit-text-stroke: 1px rgb(255,111,97); */
+    line-height: 0.55em;
+    letter-spacing: -0.14em;
+    padding-bottom: 5%;
+}
+
+/* .about__title::after{
+    font-family: 'Coiny', cursive;
+    font-size: 3.5em; */
+    /* color: rgb(255,111,97); */
+    /* color: #FF00FF; */
+    /* color: rgb(255,111,97);
 
     line-height: 0.55em;
-    letter-spacing: -0.13em;
-    padding-bottom: 5%;
+    letter-spacing: -0.14em;
+    padding-bottom: 5%; */
+    /* content: ""; */
+    /* display: block; /*This will put the pseudo element on its own line. */
+    /* margin: 0 auto; This will center the border. */
+    /* width: 50%; Change this to whatever width you want. */
+    /* padding-top: 20px; This creates some space between the element and the border. */
+    /* border-bottom: 1px solid black; This creates the border. Replace black with whatever color you want. */
+/* } */
+
+.about__descript * {
+    display: block;
+    font-size: 0.75em;
+    text-align: justify;
+}
+
+.about__descript--04 {
+    font-variant: small-caps;
+}
+
+.about__links {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 0.5em;
+    border-top: 1px dotted #ff6f61;
+}
+
+.about__links__txt {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 0.75em;
+}
+
+.about__links__icons {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.about__links__icons *{
+    display: inline-block;
+    font-size: 2em;
+    color: #FF00FF;
+    margin-top: 0.5em;
+    text-shadow: 0px 4px 1px #464646;
+}
+
+.about__links__icons--02, .about__links__icons--04 {
+    color: #ff6f61;
 }
 
 section {
     /* border-bottom: 2px solid magenta; */
-    color: red;
+    /* color: red; */
 }
 
 /* LOGO | bottom to top */
@@ -88,7 +162,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
 
 }
 
@@ -104,21 +178,29 @@ section {
     background-image: url("/public/app/images/acid__clean--tiger-stamp.png");   
 }
 
-.logo__layer--04 {
+/* .logo__layer--04 {
     background-image: url("/public/app/images/acid__clean--detroit-txt.png"); 
     background-size: 97%;
-}
+} */
+
+/* .logo__layer--05 {
+    background-image: url("/public/app/images/acid__clean--exlclaim.png");   
+} */
 
 .logo__layer--05 {
-    background-image: url("/public/app/images/acid__clean--exlclaim.png");   
+    background-image: url("/public/app/images/acid__clean--exlclaim-full.png");   
 }
 
-.logo__layer--06 {
+/* .logo__layer--06 {
     background-image: url("/public/app/images/acid__clean--84-txt.png");   
-}
+} */
+
+/* .logo__layer--07 {
+    background-image: url("/public/app/images/acid__clean--cut-dashed-circ.png");   
+} */
 
 .logo__layer--07 {
-    background-image: url("/public/app/images/acid__clean--cut-dashed-circ.png");   
+    background-image: url("/public/app/images/acid__clean--full-dashed-circ.png");   
 }
 
 .logo__layer--08 {
