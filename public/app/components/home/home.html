@@ -1,6 +1,5 @@
-<background id="bg"></background>
-<section class="push"></section>
-<section class="welcome">
+<background id="bg" ng-show="$ctrl.load"></background>
+<section class="welcome" ng-show="$ctrl.load">
   <svg id="curve--viewbox" viewBox="0 0 360 130">
     <path id="curve__path" d=" M 33.129 130.642 C 117.516 50.179 241.277 48.066 326.871 130.642" fill="none"
       vector-effect="non-scaling-stroke" stroke-miterlimit="3" />
@@ -19,7 +18,7 @@
   </svg>
 </section>
 
-<section class="about">
+<section class="about" ng-show="$ctrl.load">
   <div class="about__title">84TIGERS</div></span>
   <div class="about__descript">
     <span class="about__descript--01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span> 
@@ -45,10 +44,12 @@
   <div class="logo__layer--01"></div>
   <div class="logo__layer--02"></div>
   <div class="logo__layer--03"></div>
-  <div class="logo__layer--04"></div>
+  <div class="logo__layer--04" ng-show="$ctrl.logoTxt"></div>
   <div class="logo__layer--05"></div>
-  <div class="logo__layer--06"></div>
+  <div class="logo__layer--05b" ng-show="$ctrl.logoTxt === false"></div>
+  <div class="logo__layer--06" ng-show="$ctrl.logoTxt"></div>
   <div class="logo__layer--07"></div>
+  <div class="logo__layer--07b" ng-show="$ctrl.logoTxt === false"></div>
   <div class="logo__layer--08"></div>
   <div class="logo__layer--09"></div>
 </section>

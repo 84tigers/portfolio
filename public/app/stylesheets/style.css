@@ -157,7 +157,7 @@ section {
     width: 100vw;
     height: 100vw;
     position: absolute;
-    /* top: 0; */
+    top: 20%;
     /* background: url("/public/app/images/acid__clean--tiger-background-circ.png") center contain no-repeat; */
     background-position: center;
     background-repeat: no-repeat;
@@ -178,28 +178,28 @@ section {
     background-image: url("/public/app/images/acid__clean--tiger-stamp.png");   
 }
 
-/* .logo__layer--04 {
+.logo__layer--04 {
     background-image: url("/public/app/images/acid__clean--detroit-txt.png"); 
     background-size: 97%;
-} */
-
-/* .logo__layer--05 {
-    background-image: url("/public/app/images/acid__clean--exlclaim.png");   
-} */
+}
 
 .logo__layer--05 {
+    background-image: url("/public/app/images/acid__clean--exlclaim.png");   
+}
+
+.logo__layer--05b {
     background-image: url("/public/app/images/acid__clean--exlclaim-full.png");   
 }
 
-/* .logo__layer--06 {
+.logo__layer--06 {
     background-image: url("/public/app/images/acid__clean--84-txt.png");   
-} */
-
-/* .logo__layer--07 {
-    background-image: url("/public/app/images/acid__clean--cut-dashed-circ.png");   
-} */
+}
 
 .logo__layer--07 {
+    background-image: url("/public/app/images/acid__clean--cut-dashed-circ.png");   
+}
+
+.logo__layer--07b {
     background-image: url("/public/app/images/acid__clean--full-dashed-circ.png");   
 }
 
