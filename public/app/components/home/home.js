@@ -7,6 +7,10 @@ const home = {
         vm.loaded = false;
         vm.logoTxt = true;
 
+        vm.loadHome = () => {
+            console.log("clicked");
+        };
+
     }]
 
 };

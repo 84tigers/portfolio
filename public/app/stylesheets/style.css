@@ -231,6 +231,7 @@ section {
     background-image: url("/public/app/images/acid__clean--out-dashed-circ.png");   
     animation: bounce-out 0.5s ease-out 1s forwards,
                rotate-infinite 100s linear 1.3s infinite;
+    overflow: hidden;
 }
 
 @keyframes bounce-out {
