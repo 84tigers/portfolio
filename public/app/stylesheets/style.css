@@ -201,7 +201,7 @@ section {
 
 .logo__layer--05b {
     background-image: url("/public/app/images/acid__clean--exlclaim-full.png");  
-    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards; 
+    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.1s forwards; 
 
 }
 
@@ -215,7 +215,7 @@ section {
     opacity: 0;
 }
 
-.logo__layer--06.ng-hide-remove {
+.logo__layer--06.ng-show-remove {
     animation: rotate-in 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1.33s forwards; 
     
 }
@@ -238,7 +238,7 @@ section {
 
 .logo__layer--07b {
     background-image: url("/public/app/images/acid__clean--full-dashed-circ.png"); 
-    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.25s forwards; 
+    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards; 
 
 }
 
