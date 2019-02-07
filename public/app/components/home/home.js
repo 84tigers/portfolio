@@ -6,15 +6,16 @@ const home = {
         const vm = this;
         vm.loaded = false;
         vm.logoTxt = true;
-        vm.loadAnim = false;
+        vm.landAnim = true;
 
         vm.loadHome = () => {
             console.log("clicked");
-            vm.loadAnim = true;
-            if (vm.logoTxt === true)
+            if (vm.logoTxt === true) {
+                vm.landAnim = false;
                 vm.logoTxt = false;
-            else
+            } else {
                 vm.logoTxt = true;
+            }
         };
 
     }]
