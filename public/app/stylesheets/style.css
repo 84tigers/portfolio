@@ -152,13 +152,16 @@ section {
 }
 
 /* LOGO | bottom to top */
+.logo {
+    margin-top: 15vh;
+}
 
 .logo * {
     /* display: none; */
     width: 100vw;
     height: 100vw;
     position: absolute;
-    top: 15%;
+    /* top: 15%; */
     /* background: url("/public/app/images/acid__clean--tiger-background-circ.png") center contain no-repeat; */
     background-position: center;
     background-repeat: no-repeat;
@@ -225,13 +228,13 @@ section {
 
 .logo__layer--05b {
     background-image: url("/public/app/images/acid__clean--exlclaim-full.png");  
-    /* animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.1s forwards;  */
+    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.1s forwards; 
 
 }
 
 .logo__layer--05b.land--anim {
     opacity: 0;
-    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.1s forwards; 
+    /* animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.1s forwards;  */
 
 }
 
@@ -279,22 +282,16 @@ section {
 
 .logo__layer--07b {
     background-image: url("/public/app/images/acid__clean--full-dashed-circ.png"); 
-    /* animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;  */
+    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards; 
 
 }
 
 .logo__layer--07b.land--anim {
     opacity: 0;
-    animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards; 
+    /* animation: rotate-out 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;  */
 
 }
 
-.logo__layer--08 {
-    transform: scale(0);
-    opacity: 0;
-    background-image: url("/public/app/images/acid__clean--in-solid-circ.png"); 
-    animation: bounce-out 0.5s ease-out 1s forwards;
-}
 
 .logo__layer--08 {
     /* transform: scale(0); */
@@ -316,11 +313,22 @@ section {
                rotate-infinite 100s linear 1.3s infinite; */
 }
 
+.logo__layer--09.rotate {
+    /* opacity: 0; */
+    animation: bounce-out 0.5s ease-out 1s forwards,
+               rotate-infinite 100s linear 1.3s infinite;
+    overflow: hidden;
+}
+
 .logo__layer--09.land--anim {
     opacity: 0;
     animation: bounce-out 0.5s ease-out 1s forwards,
                rotate-infinite 100s linear 1.3s infinite;
     overflow: hidden;
+}
+
+.resting--place {
+    animation: logo__loaded-position 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s forwards;
 }
 
 @keyframes bounce-out {
@@ -371,5 +379,24 @@ section {
     }
     to {
             transform: rotate(359deg);
+    }
+}
+
+@keyframes logo__loaded-position {
+    0% {
+        margin-top: 15vh;
+        transform: scale(1);
+    }
+    25% {
+        margin-top: 12vh;
+        /* transform: scale(1.25); */
+    }
+    90% {
+        /* margin-top: 53vh; */
+        /* transform: scale(0.8); */
+    }
+    100% {
+        margin-top: 55vh;
+        transform: scale(1);
     }
 }

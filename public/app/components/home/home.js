@@ -14,6 +14,7 @@ const home = {
                 vm.landAnim = false;
                 vm.logoTxt = false;
             } else {
+                vm.landAnim = true;
                 vm.logoTxt = true;
             }
         };

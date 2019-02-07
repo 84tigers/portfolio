@@ -40,17 +40,17 @@
     </section>
   </section>
 </section>
-<section class="logo"  ng-click="$ctrl.loadHome();">
+<section class="logo"  ng-class="{'resting--place': $ctrl.landAnim === false}" ng-click="$ctrl.loadHome();">
   <div class="logo__layer--01" ng-class="{'land--anim': $ctrl.landAnim}"></div>
   <div class="logo__layer--02" ng-class="{'land--anim': $ctrl.landAnim}"></div>
   <div class="logo__layer--03" ng-class="{'land--anim': $ctrl.landAnim}"></div>
   <div class="logo__layer--04" ng-class="{'land--anim': $ctrl.landAnim}" ng-show="$ctrl.logoTxt"></div>
   <div class="logo__layer--05" ng-class="{'land--anim': $ctrl.landAnim}" ng-show="$ctrl.logoTxt"></div>
-  <div class="logo__layer--05b" ng-class="{'land--anim': $ctrl.landAnim}" ng-show="$ctrl.logoTxt === false"></div>
+  <div class="logo__layer--05b" ng-show="$ctrl.logoTxt === false"></div>
   <!-- ng-class="{'land--anim': $ctrl.landAnim}" -->
   <div class="logo__layer--06" ng-class="{'land--anim': $ctrl.landAnim}" ng-show="$ctrl.logoTxt"></div>
   <div class="logo__layer--07" ng-class="{'land--anim': $ctrl.landAnim}" ng-show="$ctrl.logoTxt"></div>
-  <div class="logo__layer--07b" ng-class="{'land--anim': $ctrl.landAnim}" ng-show="$ctrl.logoTxt === false"></div>
+  <div class="logo__layer--07b" ng-show="$ctrl.logoTxt === false"></div>
   <div class="logo__layer--08" ng-class="{'land--anim': $ctrl.landAnim}"></div>
   <div class="logo__layer--09" ng-class="{'land--anim': $ctrl.landAnim}"></div>
 </section>
